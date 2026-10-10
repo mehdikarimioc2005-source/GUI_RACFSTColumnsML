@@ -1,0 +1,33 @@
+# ============================================================
+# Multi-Model Nu Predictor — Runtime Requirements
+# ============================================================
+# The models were originally trained in the following environment:
+#   • Python: 3.14 (64-bit), including the Tkinter package
+#   • scikit-learn 1.9.0
+#   • NumPy 2.4.2
+#   • pandas 2.3.3
+#   • XGBoost 3.3.0
+#   • LightGBM 4.6.0
+#   • CatBoost 1.2.10
+#   • joblib 1.5.3
+#   • openpyxl (for Excel files)
+# ============================================================
+
+# ---------- Core numerics & data ----------
+numpy==2.4.2
+pandas==2.3.3
+joblib==1.5.3
+
+# ---------- Machine-learning libraries ----------
+scikit-learn==1.9.0
+xgboost==3.3.0
+lightgbm==4.6.0
+catboost==1.2.10
+
+# ---------- Streamlit web app ----------
+streamlit>=1.30
+
+# ---------- Excel export ----------
+openpyxl
+xlsxwriter
+requests
